@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Corner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: lightblue;
+            overflow: hidden;
+        }
+        .navbar-container{
+            background-image: linear-gradient(#080808, #0a0a0a);
+        }
+        #logo{
+            width: auto;
+            height: 70px;
+            margin: 15px 0px 0px 15px;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        li {
+            float: left;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 5px 15px;
+            text-decoration: none;
+            transition: .3s;
+        }   
+
+        .link1{
+            margin-left: 15px;
+            font-family: 'Articulat CF';
+            font-weight: bold;
+            font-size: 13px;
+        }
+        #link2{
+            background-color: #151419;
+            width: fit-content;
+            position: absolute;
+            right: 110px;
+            top: 30px;
+            border-radius: 15px;
+            transition: .3s;
+        }
+        #link3{
+            width: fit-content;
+            position: absolute;
+            right: 30px;
+            top: 30px;
+            border-radius: 15px;
+            transition: .3s;
+        }
+        #link2:hover, #link3:hover{
+            background-color: white;
+        }
+        #link2 a:hover{
+            color: #080808;
+        }
+        #link3 a:hover{
+            color: #080808;
+        }
+        .button{
+            font-family: 'Articulat CF';
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .content-container{
+            background-color: #151419;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+        .title-container, #overview-title, .description{
+            font-family: 'CustomFont';
+            color: white;
+            width: fit-content;
+        }
+        .title-container, #overview-title{
+            font-weight: bold;
+        }
+
+        .title-container{
+            position: relative;
+            width: fit-content;
+        }
+
+
+        #product-name{
+            font-size: 45px;
+            font-family: 'Articulat CF';
+        }
+
+        .info{
+            margin: 150px 0px 0px 35px;
+            width: fit-content;
+            position: relative;
+            left: 20px;
+        }
+        #overview-title{
+            margin: 25px 0px 0px 0px;
+            font-size: 25px;
+            font-family: 'Articulat CF';
+        }
+        .description{
+            width: 625px;
+            font-family: 'Articulat CF';
+            font-weight: lighter;
+            font-size: 20px;
+            padding: 10px 0px 0px 0px;
+            opacity: .8;
+        }
+
+        .background{
+            position: absolute;
+            margin: 0px 0px 0px 0px;
+            left: 15px;
+            margin-left: 0px;
+            top: 0px;
+        }
+        #background-title{
+            font-family: 'Global';
+            font-size: 240px;
+            font-weight: lighter;
+            color: white;
+            opacity: .3;
+            height: 0px;
+        }
+
+        /* image style */
+        .image1-container{
+            width: fit-content;
+            position: absolute;
+            top: 25px;
+            left: 50%;
+            filter: drop-shadow(0px 0px 5px black);
+        }
+        #image1{
+            width: 270px;
+            height: auto;
+            transition-duration: .3s;
+        }        
+        .image2-container{
+            background-image: linear-gradient(rgba(37, 37, 37, 0.5), rgb(0, 0, 0)),
+            url(src/img/iPhone-img2.jpg);
+            
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 580px;
+            height: 100%;
+        }
+        .link1 li a:hover{
+            border-right: #080808;
+            border-radius: 10px 10px 0px 0px;
+            background-color: white;
+            color: black;
+        }
+
+        @media screen and (max-width:1280px) {
+            .image1-container{
+                top: 70px;
+                left: 60%;
+            }
+            #image1 {
+                width: 390px;
+                height: auto;
+            }
+            #product-name{
+                font-size: 50px;
+            }
+
+            .description{
+                font-size: 25px;
+            }
+            #overview-title{
+                font-size: 30px;
+            }
+        }
+    </style>
+    <title>Tech Corner</title>
+</head>
+<body>
+    <div class="navbar-container">
+        <img src="src/img/TechCornerLogo.png" alt="shoplogo" id="logo">
+        <!-- login and cart button -->
+        <div class="button" id="link2">
+            <ul>
+                <li><a href="login.php">Login</a></li>
+            </ul>
+        </div>
+        <div class="button" id="link3">
+            <ul>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </div>
+        <!-- links -->
+        <div class="link1">
+            <ul>
+                <li><a href="#">Mobile phone</a></li>
+                <li><a href="#">Keyboard</a></li>
+                <li><a href="#">Mouse</a></li>
+                <li><a href="#">Laptop</a></li>
+                <li><a href="#">Headphone</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <div class="background">
+            <h2 id="background-title">apple</h2>
+        </div>
+        <div class="image2-container"></div>
+        
+        <div class="info">
+            <div class="title-container">
+                <h1 id="product-name">iPhone 14 Pro Max</h1>
+            </div>
+            <h1 id="overview-title">Overview</h1>
+            <div class="description">
+                iPhone 14 Pro Max. Capture incredible detail with a 48MP Main camera. Experience iPhone in an whole new way with Dynamic Island and Always-On display. Crash Detection, a new safety feature calls for help when you can't.
+            </div>
+        </div>
+        
+        
+        <div class="image1-container">
+            <img src="src/img/iPhone-img1.png" alt="image" id="image1">
+        </div>
+    </div>
+</body>
+</html>

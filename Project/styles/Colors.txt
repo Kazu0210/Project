@@ -1,0 +1,11 @@
+Navbar (gradient)
+#080808
+#0a0a0a
+
+iframe background & login button color 
+#151419
+
+
+dots
+active color: #151419
+inactive color: #85848a

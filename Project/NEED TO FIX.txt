@@ -1,0 +1,1 @@
+tableuser.php and tableadmin.php same output
